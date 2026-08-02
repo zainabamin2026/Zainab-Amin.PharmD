@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
@@ -221,6 +221,7 @@
   .certcard p{ font-size:13.5px; color:var(--ink-soft); margin-bottom:16px; }
   .certcard a{ margin-top:auto; font-family:'IBM Plex Mono', monospace; font-size:12.5px; color:var(--teal-deep); border-bottom:1px solid var(--teal-deep); align-self:flex-start; padding-bottom:2px; }
   .certcard a:hover{ color:var(--coral); border-color:var(--coral); }
+  .certcard span.mono{ margin-top:auto; }
 
   /* ---------- SKILLS ---------- */
   .skills-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:2px; background:var(--line); border:1px solid var(--line); }
@@ -236,10 +237,12 @@
   .contact{ background:var(--teal-deep); color:var(--paper); border-top:none; }
   .contact h2{ color:var(--paper); font-size:clamp(30px,4.6vw,48px); max-width:20ch; }
   .contact p.lede{ color:#CBD8CE; max-width:54ch; margin:18px 0 40px; font-size:16.5px; }
-  .contact-links{ display:flex; flex-wrap:wrap; gap:16px; }
+  .contact-links{ display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; }
+  @media (max-width:760px){ .contact-links{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:460px){ .contact-links{ grid-template-columns:1fr; } }
   .clink{
-    border:1px solid rgba(238,241,234,0.35); padding:16px 22px; display:flex; align-items:center; gap:10px;
-    font-family:'IBM Plex Mono', monospace; font-size:13.5px; transition:all .2s;
+    border:1px solid rgba(238,241,234,0.35); padding:16px 20px; display:flex; align-items:center; justify-content:center; gap:10px;
+    font-family:'IBM Plex Mono', monospace; font-size:13px; transition:all .2s; text-align:center;
   }
   .clink:hover{ background:rgba(238,241,234,0.08); border-color:var(--gold); }
 
@@ -395,8 +398,8 @@
         <h3 style="color:var(--paper); font-size:24px; margin-bottom:10px;">Comparative Analysis of Cognitive and Language Impairments in Virtual Autism</h3>
         <p>A comprehensive systematic review built on a PICO framework, screening 300+ studies across PubMed and Cochrane, conducted under PRISMA guidelines with evidence synthesis in Rayyan and standardized critical appraisal tools. Selected as a URISE research fellow to present the work at the International Conference of Healthcare Challenges and Innovations in the 21st Century (HCIC), UMT. Currently under review for publication with advisor Dr. Rabia Altaf.</p>
         <div class="cta-row" style="margin:20px 0 0;">
-          <a class="btn" style="border-color:var(--gold); color:var(--paper);" href="thesis.pdf" target="_blank" rel="noopener">View Thesis ↗</a>
-          <a class="btn" style="border-color:var(--gold); color:var(--paper);" href="poster.pdf" target="_blank" rel="noopener">View Poster ↗</a>
+          <a class="btn" style="border-color:var(--gold); color:var(--paper);" href="https://drive.google.com/file/d/1zW3iVn-KejtMs4zEQtxhhPDEgvVUkU35/view?usp=sharing" target="_blank" rel="noopener">View Thesis ↗</a>
+          <a class="btn" style="border-color:var(--gold); color:var(--paper);" href="https://canva.link/2ec4v63me3o3pzh" target="_blank" rel="noopener">View Poster ↗</a>
         </div>
       </div>
 
@@ -633,37 +636,37 @@
           <p class="stage">Data &amp; Programming</p>
           <h3>Data Analysis with R Programming</h3>
           <p>Google</p>
-          <a href="certs/data-analysis-r-google.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+          <a href="https://www.coursera.org/account/accomplishments/verify/7PBCD6KBRR7E" target="_blank" rel="noopener">View Certificate ↗</a>
         </div>
         <div class="certcard">
           <p class="stage">Health Informatics</p>
           <h3>The Data Science of Health Informatics</h3>
           <p>Johns Hopkins University</p>
-          <a href="certs/health-informatics-jhu.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+          <a href="https://www.coursera.org/account/accomplishments/verify/33K36R64T9KT" target="_blank" rel="noopener">View Certificate ↗</a>
         </div>
         <div class="certcard">
           <p class="stage">Clinical Research</p>
           <h3>Good Clinical Practice</h3>
-          <p></p>
-          <a href="certs/good-clinical-practice.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+          <p>&nbsp;</p>
+          <span class="mono" style="font-size:12.5px; color:var(--ink-soft); opacity:0.75;">Certificate available on request</span>
         </div>
         <div class="certcard">
           <p class="stage">Public Health</p>
           <h3>The National Institute on Drug Abuse (NIDA)</h3>
           <p>National Institutes of Health (NIH)</p>
-          <a href="certs/nida-nih.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+          <span class="mono" style="font-size:12.5px; color:var(--ink-soft); opacity:0.75;">Certificate available on request</span>
         </div>
         <div class="certcard">
           <p class="stage">Digital Health &amp; AI</p>
           <h3>AI in Healthcare</h3>
           <p>Stanford University</p>
-          <a href="certs/ai-in-healthcare-stanford.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+          <span class="mono" style="font-size:12.5px; color:var(--ink-soft); opacity:0.75;">Certificate available on request</span>
         </div>
         <div class="certcard">
           <p class="stage">Public Health</p>
           <h3>Foundations of Public Health Practice: The Public Health Approach</h3>
           <p>Imperial College London</p>
-          <a href="certs/public-health-approach-imperial.pdf" target="_blank" rel="noopener">View Certificate ↗</a>
+          <a href="https://www.coursera.org/account/accomplishments/verify/L4BFULN3G7XB" target="_blank" rel="noopener">View Certificate ↗</a>
         </div>
       </div>
     </div>
@@ -678,7 +681,7 @@
       </div>
       <ul class="honors">
         <li><span>Forensic Pharmaceutical Project Competition, 1st Place</span><span class="yr">2026</span></li>
-        <li><span>Final Year Thesis Project, 2nd Place</span><span class="yr">2026</span></li>
+        <li><a href="https://drive.google.com/file/d/1mWKKsFT8Y4xkg6VcISIP6MxyGogURM_F/view?usp=sharing" target="_blank" rel="noopener" style="color:var(--ink); border-bottom:1px dotted var(--ink-soft);">Final Year Thesis Project, 2nd Place ↗</a><span class="yr">2026</span></li>
         <li><span>OSCE Highest Scorer, Top 5%</span><span class="yr">2025</span></li>
         <li><span>Top 10, Co-op Summer Program</span><span class="yr">2025</span></li>
         <li><span>GitHub Drug Profile Project, Rank 2/86</span><span class="yr">2025</span></li>
@@ -698,9 +701,10 @@
       <h2>Looking for a doctoral program in public health where evidence turns into delivery.</h2>
       <p class="lede">Research supervisors, admissions committees, or anyone working on health services delivery in low-resource settings, I'd like to hear from you.</p>
       <div class="contact-links">
-        <a class="clink" href="mailto:zainabamin.pharmd@gmail.com">✉ zainabamin.pharmd@gmail.com</a>
+        <a class="clink" href="mailto:zainabamin.pharmd@gmail.com">✉ Email</a>
         <a class="clink" href="https://www.linkedin.com/in/zainab-amin-690407287/" target="_blank" rel="noopener">in LinkedIn</a>
-        <a class="clink" href="https://github.com/" target="_blank" rel="noopener">&lt;/&gt; GitHub</a>
+        <a class="clink" href="Zainab_Amin_CV.pdf" target="_blank" rel="noopener">↓ Download CV</a>
+        <a class="clink" href="https://zainabamin2026.github.io/salbutamol/" target="_blank" rel="noopener">&lt;/&gt; Live Project</a>
       </div>
     </div>
   </section>
